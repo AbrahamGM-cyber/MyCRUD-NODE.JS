@@ -1,0 +1,28 @@
+<%- include('partials/cabezera.ejs') %>
+
+    <body>
+<br>
+<br>
+<br>
+
+                                <form action="/update/<%= data.id %>" method="post">
+
+                                    <div class="form-group">
+                                        <label for="Tarea">Actualice su Materia</label>
+                                        <input type="text" name="Tarea" value="<%= data.Tarea %> " class="form-control reg">
+                                    </div>
+<br>
+                                    <div class="form-group">
+                                        <label for="Fecha_tarea">Actualice su fecha</label>
+                                        <input type="date" name="Fecha_tarea" value="<%= data.Fecha_tarea %> " class="form-control reg">
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <button type="submit" class="btn btn-danger">ACTUALIZAR</button>
+                                </form>
+         
+    </body>
+    <%- include('partials/navfun.ejs') %>
+
+        </html>
